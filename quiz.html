@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Quiz: Fake Quote Heaven</title>
+    <meta name="description" content="Fake Quote Heaven - Firat Ciftci" />
+    <meta name="author" content="Firat Ciftci" />
+
+    <link rel="stylesheet" href="styles.css?v=1.0" />
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <script src="scripts.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand mb-0 h1" href="/home.html">Fake Quote Heaven</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/create.html">Create</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/paper.html">Paper</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/quiz.html">Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-content question-page container">
+      <h1 class="page-header">Quiz</h1>
+
+      <div class="question">
+        <div class="question-title">QUESTION 1</div>
+        <div class="question-text">
+          "This would be the best of all possible worlds if there were no religion in it."
+        </div>
+        <div class="question-name">– John Adams</div>
+        <div class="question-answer question-real" id="wrong1" onclick="submitWrongAnswer(1);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right1" onclick="submitRightAnswer(1);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 2</div>
+        <div class="question-text">
+          "I am convinced there is only one way to eliminate these grave evils, namely through the
+          establishment of a socialist economy, accompanied by an educational system which would be
+          oriented toward social goals."
+        </div>
+        <div class="question-name">– Albert Einstein</div>
+        <div class="question-answer question-real" id="right2" onclick="submitRightAnswer(2);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong2" onclick="submitWrongAnswer(2);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 3</div>
+        <div class="question-text">
+          "In whatever country Jews have settled in any great numbers, they have lowered the moral
+          tone, depreciated the commercial integrity, have segregated themselves, and have not been
+          assimilated, have sneered at and tried to undermine the Christian religion, have built up
+          a state within a state, and have, when opposed, tried to strangle that country to death
+          financially."
+        </div>
+        <div class="question-name">– Benjamin Franklin</div>
+        <div class="question-answer question-real" id="wrong3" onclick="submitWrongAnswer(3);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right3" onclick="submitRightAnswer(3);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 4</div>
+        <div class="question-text">
+          "The definition of insanity is doing the same thing over and over and expecting different
+          results."
+        </div>
+        <div class="question-name">– Albert Einstein</div>
+        <div class="question-answer question-real" id="wrong4" onclick="submitWrongAnswer(4);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right4" onclick="submitRightAnswer(4);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 5</div>
+        <div class="question-text">
+          "Man in his arrogance thinks himself a great work worthy the interposition of a deity.
+          More humble, and I believe truer, to consider him created from animals."
+        </div>
+        <div class="question-name">– Charles Darwin</div>
+        <div class="question-answer question-real" id="right5" onclick="submitRightAnswer(5);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong5" onclick="submitWrongAnswer(5);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 6</div>
+        <div class="question-text">
+          "Of all the forms of inequality, injustice in healthcare is the most shocking and
+          inhumane."
+        </div>
+        <div class="question-name">– Martin Luther King, Jr.</div>
+        <div class="question-answer question-real" id="right6" onclick="submitRightAnswer(6);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong6" onclick="submitWrongAnswer(6);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 7</div>
+        <div class="question-text">
+          "You can fool all the people some of the time and some of the people all the time, but you
+          can not fool all the people all the time."
+        </div>
+        <div class="question-name">– Abraham Lincoln</div>
+        <div class="question-answer question-real" id="wrong7" onclick="submitWrongAnswer(7);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right7" onclick="submitRightAnswer(7);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 8</div>
+        <div class="question-text">
+          "Ours is one continual struggle against a degradation sought to be inflicted upon us by
+          the Europeans, who desire to degrade us to the level of the raw Kaffir whose occupation is
+          hunting, and whose sole ambition is to collect a certain number of cattle to buy a wife
+          with and, then, pass his life in indolence and nakedness."
+        </div>
+        <div class="question-name">– Mahatma Gandhi</div>
+        <div class="question-answer question-real" id="right8" onclick="submitRightAnswer(8);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong8" onclick="submitWrongAnswer(8);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 9</div>
+        <div class="question-text">
+          "The hottest places in hell are reserved for those who in times of great moral crisis
+          maintain their neutrality."
+        </div>
+        <div class="question-name">– Dante</div>
+        <div class="question-answer question-real" id="wrong9" onclick="submitWrongAnswer(9);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right9" onclick="submitRightAnswer(9);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 10</div>
+        <div class="question-text">
+          "If I have seen farther, it is by standing on the shoulders of giants."
+        </div>
+        <div class="question-name">– Isaac Newton</div>
+        <div class="question-answer question-real" id="wrong10" onclick="submitWrongAnswer(10);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right10" onclick="submitRightAnswer(10);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 11</div>
+        <div class="question-text">
+          "Veni, vidi, vici."
+        </div>
+        <div class="question-name">– Julius Caesar</div>
+        <div class="question-answer question-real" id="right11" onclick="submitRightAnswer(11);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong11" onclick="submitWrongAnswer(11);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 12</div>
+        <div class="question-text">
+          "A revolution is coming — a revolution which will be peaceful if we are wise enough;
+          compassionate if we care enough; successful if we are fortunate enough — But a revolution
+          which is coming whether we will it or not. We can affect its character; we cannot alter
+          its inevitability."
+        </div>
+        <div class="question-name">– John F. Kennedy</div>
+        <div class="question-answer question-real" id="wrong12" onclick="submitWrongAnswer(12);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="right12" onclick="submitRightAnswer(12);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 13</div>
+        <div class="question-text">
+          "Where there is great power there is great responsibility."
+        </div>
+        <div class="question-name">– Winston Churchill</div>
+        <div class="question-answer question-real" id="right13" onclick="submitRightAnswer(13);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong13" onclick="submitWrongtAnswer(13);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 14</div>
+        <div class="question-text">
+          "Science is the belief in the ignorance of experts."
+        </div>
+        <div class="question-name">– Richard Feynman</div>
+        <div class="question-answer question-real" id="right14" onclick="submitRightAnswer(14);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong14" onclick="submitWrongAnswer(14);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-title">QUESTION 15</div>
+        <div class="question-text">
+          "I'm very liberal when it comes to health care. I believe in universal health care. I
+          believe in whatever it takes to make people well and better."
+        </div>
+        <div class="question-name">– Donald J. Trump</div>
+        <div class="question-answer question-real" id="right15" onclick="submitRightAnswer(15);">
+          REAL <i class="fas fa-grin-stars"></i>
+        </div>
+        <div class="question-answer question-fake" id="wrong15" onclick="submitWrongAnswer(15);">
+          FAKE <i class="fas fa-angry"></i>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-light bg-light" style="margin-top: 1rem">
+      <span class="navbar-text">
+        LING 23920 • Midterm Project by Firat Ciftci
+      </span>
+    </nav>
+  </body>
+</html>
