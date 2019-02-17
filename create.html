@@ -55,14 +55,31 @@
         </ul>
       </div>
     </nav>
-    <div class="page-content container text-center">
-      <div class="col-3">
+    <div class="page-content container create-page">
+      <h1>Create fake quote</h1>
+      <div class="create-text">
+        <label>Fake quote:</label>
         <input id="text" type="text" />
-        <input id="name" type="text" />
-        <input id="image" type="file" />
-        <input id="submit" type="button" value="Create image" onclick="drawImageActualSize();" />
-        <canvas id="canvas" width="800" height="400"></canvas>
       </div>
+      <div class="create-name">
+        <label>Misattributed name:</label>
+        <input id="name" type="text" />
+      </div>
+      <div class="create-image">
+        <label>Photo of misattributed person:</label>
+        <input id="image" type="file" />
+      </div>
+      <input
+        id="submit"
+        class="create-button"
+        type="button"
+        value="Create fake quote"
+        onclick="drawImageActualSize();"
+      />
+      <canvas id="canvas" width="800" height="400"></canvas>
+      <span style="font-style: italic; color: darkgray; font-weight: 300">
+        Right click on the image to save it.
+      </span>
     </div>
     <nav class="navbar navbar-light bg-light" style="margin-top: 1rem">
       <span class="navbar-text">

@@ -42,6 +42,33 @@
   background-image: url('/assets/quiz.jpg');
 }
 
+.create-page {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 1.5rem;
+  align-content: center;
+  justify-content: center;
+}
+
+label {
+  font-weight: 700;
+}
+
+.create-text {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.create-name {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.create-image {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
 .question-page {
   display: grid;
   grid-auto-flow: row;
